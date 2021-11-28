@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#section1 {
+    background-image: url(images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    overflow: hidden;
+    background-color: hsl(193, 100%, 96%);
+}
+
+h1 {
+    font-family: 'Poppings', sans-serif;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 6rem 0;
+}
+
+.logo {
+    height: 30px;
+}
+
+.trial-btn {
+    width: 13rem;
+    border-radius: 2rem;
+    height: 3rem;
+    border: hidden;
+    box-shadow: 0px 1px 5px 1px #7d7f85;
+    background-color: #F9F9F9;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.trial-btn:hover {
+    color: hsl(208, 11%, 55%);
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    margin: 4.5rem 6rem 0;
+
+}
+
+.content {
+    padding-top: 5rem;
+}
+
+.content h1 {
+    font-size: 3rem;
+    text-align: left;
+    line-height: 4rem;
+    padding: 0 10rem 2rem 0;
+}
+
+.content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 10rem 2rem 0;
+}
+
+.btn {
+    width: 17rem;
+    border-radius: 2rem;
+    height: 3.5rem;
+    border: hidden;
+    box-shadow: 0px 1px 5px 1px #7d7f85;
+    background-color: hsl(322, 100%, 66%);
+    color: #F9F9F9;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: hsl(323, 59%, 76%);
+}
+
+.img-mockup {
+    width: 50vmax;
+    height: 31vmax;
+    margin-bottom: 4rem;
+}
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vmax;
+    height: 22.5rem;
+    box-shadow: 0px 1px 5px 1px #7d7f85;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+    padding: 10rem;
+}
+
+#section2 img {
+    width: 35vmin;
+    height: 35vmin;
+}
+
+.card {
+    width: 30vmax;
+}
+
+.card h1 {
+    padding-bottom: 1rem;
+}
+
+.card p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(208, 11%, 55%);
+}
+
+.proposal {
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 45vmax;
+    height: 15rem;
+    margin: 0 auto 1rem;
+    border-radius: 1rem;
+    bottom: 18rem;
+    box-shadow: 0px 1px 5px 1px #7d7f85;
+    background-color: white;
+}
+
+.proposal h1 {
+    padding: 2rem;
+}
+
+footer {
+    position: relative;
+    height: 60vmin;
+    background-color: hsl(192, 100%, 9%);
+    color: #E8E8E8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer li {
+    list-style: none;
+}
+.col-1 li {
+    padding-bottom: 1rem;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+}
+.col-1 {
+    width: 16rem;
+}
+.col-1 img{
+    padding-bottom: 1rem;
+    height: 2.5rem;
+}
+span{
+    padding-left: 1rem;
+    
+}
+li{
+    display: flex;
+    
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    bottom: 5px;
+    position: absolute;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.col-2 li , .col-3 li {
+    padding: 0.5rem;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+}
+.col-4 {
+    position: relative;
+    height: 40vmin;
+    width: 41vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.col-4 ul li:first-child{
+    position: absolute;
+    top: 6.5rem;
+}
+.fab {
+    margin-left: 1rem;
+}
+.fab:hover{
+    color: hsl(322, 100%, 66%);
+    cursor: pointer;
+}
+.col-4 ul li:last-child {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 0.7rem;
+}
+.col-2 ul li:hover, .col-3 ul li:hover {
+    color: hsl(322, 100%, 66%);
+    cursor: pointer;
+    text-decoration: underline;
+}
