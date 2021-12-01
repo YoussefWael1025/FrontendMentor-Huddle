@@ -7,10 +7,9 @@
 #section1 {
     background-image: url(images/bg-hero-desktop.svg);
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: top;
-    overflow: hidden;
     background-color: hsl(193, 100%, 96%);
+
 }
 
 h1 {
@@ -22,11 +21,13 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 50px 6rem 0;
+    padding-top: 3rem;
+    margin: 0 6rem 0;
+    width: 87%;
 }
 
 .logo {
-    height: 30px;
+    height: 1.8rem;
 }
 
 .trial-btn {
@@ -34,7 +35,7 @@ nav {
     border-radius: 2rem;
     height: 3rem;
     border: hidden;
-    box-shadow: 0px 1px 5px 1px #7d7f85;
+    box-shadow: 1px 1px 5px 1px #d8dce7;
     background-color: #F9F9F9;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -48,26 +49,26 @@ nav {
 .hero {
     display: flex;
     flex-direction: row;
-    margin: 4.5rem 6rem 0;
-
+    margin: 4.5rem 6rem 0
 }
 
 .content {
     padding-top: 5rem;
+    width: 45%;
 }
 
 .content h1 {
     font-size: 3rem;
     text-align: left;
     line-height: 4rem;
-    padding: 0 10rem 2rem 0;
 }
 
 .content p {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    padding: 0 10rem 2rem 0;
+    padding: 0 5rem 2rem 0;
+
 }
 
 .btn {
@@ -81,6 +82,7 @@ nav {
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+
 }
 
 .btn:hover {
@@ -88,8 +90,7 @@ nav {
 }
 
 .img-mockup {
-    width: 50vmax;
-    height: 31vmax;
+    width: 50%;
     margin-bottom: 4rem;
 }
 
@@ -105,21 +106,16 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 80vmax;
-    height: 22.5rem;
-    box-shadow: 0px 1px 5px 1px #7d7f85;
+    height: fit-content;
+    box-shadow: 1px 1px 5px 1px #d8dce7;
     border-radius: 1rem;
     margin-bottom: 2.5rem;
-    padding: 10rem;
+    padding: 5.125rem 3.125rem 5.15rem 6.25rem;
 }
 
 #section2 img {
-    width: 35vmin;
-    height: 35vmin;
-}
+    width: 16rem;
 
-.card {
-    width: 30vmax;
 }
 
 .card h1 {
@@ -133,19 +129,20 @@ nav {
 }
 
 .proposal {
-    position: absolute;
+    /* position: absolute; */
     z-index: 99;
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
     width: 45vmax;
-    height: 15rem;
-    margin: 0 auto 1rem;
+    padding: 2.5%;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 1rem;
-    bottom: 18rem;
-    box-shadow: 0px 1px 5px 1px #7d7f85;
+    box-shadow: 1px 1px 5px 1px #d8dce7;
     background-color: white;
 }
 
@@ -154,8 +151,7 @@ nav {
 }
 
 footer {
-    position: relative;
-    height: 60vmin;
+    height: 70vmin;
     background-color: hsl(192, 100%, 9%);
     color: #E8E8E8;
     display: flex;
@@ -163,29 +159,36 @@ footer {
     justify-content: space-evenly;
     align-items: center;
 }
+
 footer li {
     list-style: none;
 }
+
 .col-1 li {
     padding-bottom: 1rem;
     font-size: 11px;
     font-family: 'Open Sans', sans-serif;
 }
+
 .col-1 {
     width: 16rem;
 }
-.col-1 img{
+
+.col-1 img {
     padding-bottom: 1rem;
     height: 2.5rem;
 }
-span{
+
+span {
     padding-left: 1rem;
-    
+
 }
-li{
+
+li {
     display: flex;
-    
+
 }
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -197,37 +200,161 @@ li{
     color: hsl(228, 45%, 44%);
 }
 
-.col-2 li , .col-3 li {
+.col-2 li,
+.col-3 li {
     padding: 0.5rem;
     font-size: 11px;
     font-family: 'Open Sans', sans-serif;
 }
-.col-4 {
-    position: relative;
-    height: 40vmin;
-    width: 41vmin;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+
+.col-4 ul li:first-child {
+    margin-bottom: 5rem;
 }
-.col-4 ul li:first-child{
-    position: absolute;
-    top: 6.5rem;
-}
+
 .fab {
     margin-left: 1rem;
 }
-.fab:hover{
+
+.fab:hover {
     color: hsl(322, 100%, 66%);
     cursor: pointer;
 }
+
 .col-4 ul li:last-child {
     position: absolute;
     bottom: 1rem;
     font-size: 0.7rem;
 }
-.col-2 ul li:hover, .col-3 ul li:hover {
+
+.col-2 ul li:hover,
+.col-3 ul li:hover {
     color: hsl(322, 100%, 66%);
     cursor: pointer;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    #section1 {
+        background-image: url(images/bg-hero-mobile.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    nav {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        min-width: 400px;
+
+    }
+
+    .img-mockup {
+        margin: 0;
+        width: 350px;
+        height: 250px;
+    }
+
+    .content h1 {
+        text-align: center;
+        padding: 1rem 0;
+        margin: 0;
+        font-size: 2.5rem;
+
+    }
+
+    .content p {
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        margin: 1rem 0;
+    }
+
+    .card:nth-child(1n) p {
+        padding-bottom: 1rem;
+    }
+
+    .card:nth-child(2n) h1 {
+        padding-top: 1rem;
+    }
+
+    .proposal {
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+
+    .proposal h1 {
+        padding: 2rem 1rem 1rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        padding-top: 2rem;
+        height: 60vmax;
+    }
+
+    .col-4 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .col-4 ul li:first-child {
+        justify-content: center;
+    }
+
+    .col-4 ul li:last-child {
+        font-size: 0.7rem;
+        position: relative;
+        bottom: 0;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 850px) {
+    footer{
+        height: 70vmax;
+    }
+    .proposal {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 750px) {
+    footer {
+        height: 100vmax;
+    }
+    nav {
+        width: 90%;
+    }
+    .proposal {
+        width: 80%;
+    }
 }
